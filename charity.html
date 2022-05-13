@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <style>
+        /* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_-_1200x900%2Fpublic%2F1542062283%2Fchocolate-and-cream-layer-cake-1812-cover.jpg%3Fitok%3DR_xDiShk") no-repeat center center/cover;
+    height: 550px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.8;
+}
+
+#home h1{
+    color:white;
+    text-align: center;
+    font-family: "Poiret One",cursive;
+
+}
+
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+    /* background-color: black; */
+}
+#services .box{ 
+    /*border: 2px solid brown;*/
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    box-shadow: 12px 24px 25px rgb(148, 53, 53);
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+
+/* Clients Section */
+#client-section{ 
+    position: relative;
+}
+
+#client-section::before{
+ content: "";
+ position: absolute;
+ background: url("https://images.everydayhealth.com/images/ordinary-fruits-with-amazing-health-benefits-05-1440x810.jpg");
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.3;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 124px;
+}
+
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url("https://gobusinessplus.com/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/t/h/thumbnail-img-2.png") no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 30px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.h-primary-center{
+    top: 45px;
+    position: absolute;
+}
+
+.center{
+    text-align: center;
+}
+    </style>
+       
+</head>
+<body>
+    <section id="home">
+        <h1 class="h-primary">OUR BLOGS</h1>
+        <a href="food1.html"> <button class="btn">Order Now</button></a>
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary-center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="https://i.pinimg.com/736x/78/e7/af/78e7af503cd6a7779ab0694bd81c1101.jpg" alt="">
+                <h2 class="h-secondary center">wedding cakes</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui, repudiandae similique nam, recusandae quidem ab asperiores ex, aut fugit labore veritatis facere?
+                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+            </div>
+            <div class="box">
+                <img src="https://www.elegantweddinginvites.com/wedding-blog/wp-content/uploads/2020/09/wedding-cakes-ideas-for-2021-wedding.jpg" alt="">
+                <h2 class="h-secondary center">Birthday cakes</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laudantium a incidunt animi ad, ab dignissimos vero? Unde numquam odit repudiandae perferendis nisi.
+
+                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+            </div>
+            <div class="box">
+                <img src="https://preppykitchen.com/wp-content/uploads/2019/06/Chocolate-cake-recipe-1200a.jpg" alt="">
+                <h2 class="h-secondary center">all types availabe</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus provident fugiat aliquam minima at explicabo. Earum eveniet quaerat, sunt molestias nesciunt quas! Quis.
+                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="https://www.dillyscake.com/ootsimpa/2019/12/Dillys-Cake-Logo-.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHoCMTt10qsgpttNEPbAarmsQ1KgByCPJQncSvLfnQI2CUg0xvPE8Pm4ht8O-wbNuJdeo&usqp=CAU" alt="Our Client">
+            </div>
+          
+            <div class="client-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSss7Fqy0rw55yLoSAavQn9NXGeoXC-mba3BOtgC20HF4LML_SrGVb0WyTZ2uIQn1PsWIw&usqp=CAU" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNVTEQNOJWtQVJcj2YTHcozlLvvP0tQ6-JM3dIeMo0Ow3fob1WXc4PDQdTsffamCXnGx8&usqp=CAU" alt="Our Client">
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.myOnlineMeal.com. All rights reserved!
+        </div>
+    </footer>
+
+</body>
+</html>
