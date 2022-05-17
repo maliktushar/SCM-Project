@@ -6,6 +6,7 @@
     --border-radius-hover:4% 95% 6% 95%/95% 4% 92% 5%;
     --border:.2rem solid var(--main-color);
     --border-hover:.2rem dashed var(--main-color);
+    /* change 1 */
 }
 
 *{
