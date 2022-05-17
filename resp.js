@@ -2,6 +2,7 @@ navbar = document.querySelector('.navbar');
 openmenu = document.querySelector('.openmenu');
 
 openmenu.addEventListener('click',show);
+// fork added by arshnoor
 
 function show(){
     navbar.style.display='flex';
