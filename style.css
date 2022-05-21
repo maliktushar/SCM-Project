@@ -384,7 +384,7 @@ body{
 .book form .box{
     width:100%;
     padding:1rem 1.2rem;
-    border-radius: .5rem;
+    border-radius: 1rem;
     font-size: 1.6rem;
     background:none;
     text-transform: none;
