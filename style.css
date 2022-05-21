@@ -214,7 +214,7 @@ body{
     line-height: 1.8;
     padding:1rem 0;
 }
-
+/*Added second comment*/
 .about .row .content .icons-container{
     display: flex;
     flex-wrap: wrap;
